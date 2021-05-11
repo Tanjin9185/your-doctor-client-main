@@ -16,7 +16,7 @@ const Sidebar = () => {
     const decodedToken = jwt_decode(token);
 
     useEffect(() => {
-        fetch('https://shielded-mesa-35194.herokuapp.com//isDoctor', {
+        fetch('https://shielded-mesa-35194.herokuapp.com/isDoctor', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: signedInUser.email || decodedToken.email })

@@ -24,7 +24,7 @@ const AddDoctor = () => {
         formData.append('name', info.name);
         formData.append('email', info.email);
 
-        fetch('https://shielded-mesa-35194.herokuapp.com//addADoctor', {
+        fetch('https://shielded-mesa-35194.herokuapp.com/addADoctor', {
             method: 'POST',
             body: formData
         })

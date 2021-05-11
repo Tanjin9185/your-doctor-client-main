@@ -40,7 +40,7 @@ const AppointmentForm = ({ modalIsOpen, closeModal, appointmentOn, date, visitin
             session: visitingHour
         }
 
-        fetch('https://shielded-mesa-35194.herokuapp.com//addAppointment', {
+        fetch('https://shielded-mesa-35194.herokuapp.com/addAppointment', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(appointmentData)

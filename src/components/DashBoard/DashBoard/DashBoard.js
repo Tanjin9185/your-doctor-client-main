@@ -27,7 +27,7 @@ const DashBoard = () => {
     const decodedToken = jwt_decode(token);
 
     useEffect(() => {
-        fetch('https://shielded-mesa-35194.herokuapp.com//appointmentsByDate', {
+        fetch('https://shielded-mesa-35194.herokuapp.com/appointmentsByDate', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ date: date, email: signedInUser.email || decodedToken.email })
